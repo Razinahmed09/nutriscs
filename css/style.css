@@ -1,0 +1,519 @@
+html,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+  background-color: white;
+  line-height: 1.6;
+  font-family: Inter-Regular;
+}
+
+p {
+  line-height: 30px;
+  font-family:  Inter-Regular;
+}
+
+a {
+  text-decoration: none !important;
+  font-family:  Inter-Regular;
+}
+li {
+  list-style: none;
+}
+strong {
+  font-family: Inter-Medium;
+}
+@font-face {
+  font-family: Segoe-Font;
+  src: url("/font/Segoe\ UI.woff");
+}
+@font-face {
+  font-family: Segoe-Bold;
+  src: url("/font/Segoe\ UI\ Bold.woff");
+}
+@font-face {
+  font-family: GT-Walsheim-Medium;
+  src: url("/font/GT-Walsheim-Medium-Trial-BF651b7fc728fb3.otf");
+}
+@font-face {
+  font-family: GT-Walsheim-Regular;
+  src: url("/font/GT-Walsheim-Regular-Trial-BF651b7fc71a47d.otf");
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("/font/Montserrat-Bold.woff2");
+}
+@font-face {
+  font-family: Inter-Medium;
+  src: url("/public/assets/fonts/Inter-Medium.otf");
+}
+@font-face {
+  font-family: Inter-Bold;
+  src: url("/public/assets/fonts/Inter-Bold.otf");
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("/font/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("/font/Poppins-Medium.ttf");
+}
+
+
+.width-50 {
+  width: 50%;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #FFFF;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient( #4ca647,#185016);
+  /* outline: 1px solid slategrey; */
+  border-radius: 3px;
+}
+
+.logo img {
+    margin-left: -140px;
+}
+
+nav ul li a {
+    font-family: Segoe-Font;
+}
+
+.top-nav {
+    background-color: #4ca647;
+}
+.top-nav > div p {
+    font-family: GT-Walsheim-Medium, sans-serif;
+    padding: 12px 0;
+    font-size: 20px;
+    color: white;
+}
+.nav-brand {
+    gap: 30px;
+}
+.nav-brand li a {
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-icons a i {
+    font-size: 32px;
+    color: black;
+}
+
+/* sec1-banner */
+
+.sec1-banner {
+  background-image: url("/img/banner.webp");
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  
+}
+.sec1-banner2 {
+  background-color: #00000036;
+  height: 100%;
+  width: 100%;
+}
+
+.banner-content h1 {
+  font-size: 60px;
+  font-family: Poppins-Bold;
+  color: white;
+  text-transform: uppercase;
+  padding: 12px 0;
+}
+.banner-content h3 {
+  font-size: 45px;
+  font-family: Poppins-Medium;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.banner-content ul {
+  color: white;
+}
+.banner-content ul li {
+  color: white;
+  list-style: inside;
+  font-family: GT-Walsheim-Regular;
+  padding-left: 2rem ;
+  font-size: 18px;
+}
+
+.banner-content ul p {
+  font-family: GT-Walsheim-Regular;
+  padding: 1.2rem 0;
+  font-size: 18px;
+}
+
+.sec1-banner .row {
+  padding: 10rem 0;
+}
+
+.Banner-btn {
+  padding: 12px 20px;
+  border-radius: 5px;
+  background: #e6bb4a;
+  color: black;
+  /* font-family: Montserrat-Bold; */
+  text-align: center;
+  font-size: 18px;
+  width: 200px;
+  display: block;
+  box-shadow: -1px 1px 8px 7px rgba(255, 253.33695652173915, 253.33695652173915, 0.5);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Poppins-Bold';
+  transition: .2s ease-in-out ;
+}
+.Banner-btn:hover {
+  transform: scale(1.1);
+  background-color: white;
+}
+
+
+
+/* sec1-banner */
+
+.sec2-banner {
+  padding: 5rem 0;
+  background-color: #F4F4F4;
+}
+
+.sec2-banner h2 {
+  font-size: 50px;
+  font-family: Poppins-Medium;
+  font-weight: 600;
+  text-align: center;
+  color: #000000;
+  padding: 12px 0;
+}
+.border-B {
+  display: block;
+  border-bottom: 5px solid #000000;
+  width: 170px;
+  margin: 0 auto;
+  filter: blur(.7px);
+}
+
+.sec2-banner img {
+  width: 100%;
+}
+
+.product-card {
+  padding: 13px 0;
+  height: 444px;
+} 
+.None-icons {
+  overflow: hidden;
+  height: 305px;
+}
+.none-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  bottom: -44px;
+  position: relative;
+  transition: .3s ease-in-out;
+}
+.none-inner a i {
+  color: #000000;
+  font-size: 15px;
+  font-size: 22px;
+}
+.none-inner .shop {
+  background: white;
+  padding: 2px 7px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.none-inner .shop:hover{
+  background-color: #61ce70;
+}
+.none-inner .shop:hover i {
+  color: white;
+}
+.product-card p {
+    font-family: Segoe-Bold;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 15px;
+}
+.product-card:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  border-radius: 15px ;
+}
+.product-card:hover .none-inner {
+  bottom: 90px;
+}
+.inner-icons a {
+  margin: -18px 0 0 16px;
+  color: #f2b01e;
+}
+.inner-icons a i {
+  color: #ffbf00;
+  font-weight: 800;
+  margin-left: -2px;
+  font-size: 15px;
+}
+
+/* sec3-mini */
+
+.sec3-mini {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 3rem 0;
+}
+
+.sec3-mini p {
+  font-family: GT-Walsheim-Medium, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.sec3-mini small {
+  font-family: GT-Walsheim-Regular, sans-serif;
+  font-size: 16px;
+}
+/* sec3-mini */
+
+/* sec4-stop */
+
+
+.sec4-stop .container-fluid {
+  padding: 0;
+}
+
+.sec4-stop .man-bg {
+  float: inline-end;
+}
+
+.stop-content {
+  padding-left: 8rem;
+  padding-right: 5rem;
+  position: relative;
+}
+
+.stop-content h2 {
+  font-family: 'Poppins-Medium';
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #000000;
+}
+.stop-content p {
+  font-family: 'GT-Walsheim-Regular';
+}
+
+.stop-content .Banner-btn {
+  box-shadow: -1px 1px 8px 7px rgba(0, 0, 0, 0.5);
+  width: 320px;
+  letter-spacing: 1px;
+
+}
+
+.stop-content .Banner-btn:hover {
+  background-color: black ;
+  color: white;
+}
+
+.half-line img {
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+  }
+
+  .girl-cover {
+    background-image: url("/img/girl-cover.webp");
+    background-size: cover;
+    background-position: center;
+    height: 56vh;
+  }
+
+  /* sec5-why-choose */
+
+  .sec5-why-choose {
+    background-color: #4ca647;
+    height: auto;
+    padding: 5rem 0;
+  }
+  
+  
+  .sec5-why-choose h2 {
+    font-size: 55px;
+    font-family: 'Poppins-Bold';
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    padding: 12px 0;
+  }
+
+  .sec5-why-choose .border-B {
+    border-color: #FFFF;
+  }
+
+  .sec5-why-choose .mainP {
+      font-family: 'GT-Walsheim-Regular';
+      color: #FFFF;
+      padding-top: 2rem;
+      text-align: center;
+      font-size: 14px;
+  }
+  .sec5-why-choose .card-round {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .sec5-why-choose .card-round img {
+    width: 65%;
+  }
+  .sec5-why-choose .card-round h3 {
+      padding: 16px 0;
+      font-family: 'GT-Walsheim-Regular';
+      font-size: 22px;
+      font-weight: 600;
+  }
+
+  .sec5-why-choose p {
+      font-family: 'GT-Walsheim-Regular';
+      line-height: 22px;
+  }
+
+  .sec5-why-choose .Banner-btn {
+    background-color: #FFFFFF;
+    color: #000000;
+    box-shadow: -1px 1px 8px 7px rgba(0, 0, 0, 0.5);
+    width: 260px;
+  }
+
+  .sec5-why-choose .Banner-btn:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    
+  }
+
+  .top-leftstars img{
+      position: absolute;
+      left: 0;
+      top: -100px;
+  }
+
+  .top-rightstars img {
+    position: absolute;
+    right: 0;
+    top: 0px;
+  }
+
+  .bottom-leftstars img {
+    position: absolute;
+    bottom: 11px;
+    left: -40px;
+}
+  .bottom-rightstars img {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+}
