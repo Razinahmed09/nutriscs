@@ -189,6 +189,7 @@ nav ul li a {
     font-size: 18px;
     transition: .2s ease-in-out ;
 }
+
 .nav-brand li a:hover{
   color: #4ca647;
 }
@@ -439,8 +440,13 @@ nav ul li a {
 
 .sec4-stop .man-bg {
   float: inline-end;
+  margin-right: -12px;
 }
-
+.sec4-stop .row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 .stop-content {
   padding-left: 8rem;
   padding-right: 5rem;
@@ -615,7 +621,7 @@ nav ul li a {
 
   .testi-content {
     background: #F4F0ED;
-    height: 400px;
+    height: auto;
     padding: 25px;
     text-align: left;
       display: flex;
@@ -631,6 +637,7 @@ nav ul li a {
   .testi-content p {
     font-family: 'GT-Walsheim-Regular';
     font-size: 16px;
+    height: 270px;
   }
 
   .testi-content h4 {
@@ -662,7 +669,7 @@ nav ul li a {
   .quotes {
     position: relative;
     right: -55px;
-    bottom: -30px;
+    bottom: -15px;
   }
 
   .sec7-footer {
@@ -673,7 +680,7 @@ nav ul li a {
   }
 
   .footer-logo img {
-    width: 285px;
+    width: 100%;
   }
 
   .sec7-footer h3 {
@@ -690,6 +697,10 @@ nav ul li a {
     padding: 8px 0;
     display: block;
     font-size: 18px;
+    width: 120px;
+}
+.footer-links:hover{
+  color: #4ca647;
 }
 .social-icons {
   margin-top: 2rem;
@@ -767,6 +778,15 @@ nav ul li a {
     bottom: -5px;
     right: -22px;
   }
+  .sun-stickers {
+    top: 88px;
+    left: 0px;
+    width: 250px;
+  }
+  .sec6-testi .half-line {
+    bottom: 10px;
+    right: 0;
+}
 }
 
 @media screen and (min-width:1200px) and (max-width:1399px) {
@@ -782,6 +802,31 @@ nav ul li a {
     bottom: -17px;
     right: -75px;
   }
+  .testi-content img {
+    object-fit: contain;
+  }
+  .quotes {
+    position: relative;
+    right: -13px;
+    bottom: -15px;
+  }
+  .testi-content h4 {
+    font-size: 16px;
+  }
+  .testi-content small {
+    font-size: 14px;
+  }
+  .sun-stickers {
+    position: absolute;
+    top: 82px;
+    left: 0;
+    width: 250px;
+  }
+  .sec6-testi .half-line {
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+}
 }
 
 @media screen and (min-width:992px) and (max-width:1199px) {
@@ -802,11 +847,45 @@ nav ul li a {
   .bottom-leftstars img {
     left: 0;
   }
- 
+  .testi-content {
+    height: 450px;
+  }
+  .quotes {
+    right: -9px;
+    bottom: -15px;
+  }
+  .testi-content img {
+    width: 50px;
+    object-fit: contain;
+  }
+  .testi-content h4 {
+    font-size: 16px;
+  }
+  .testi-content small {
+    font-size: 14px;
+  }
+  .testi-content p {
+    height: 310px;
+    font-size: 15px;
+  }
+  .sun-stickers {
+    position: absolute;
+    top: 110px;
+    left: 12px;
+    width: 165px;
+  }
+  .sec6-testi .half-line {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
-
+}
+ 
 
 @media screen and (min-width:768px) and (max-width:991px) {
+  .sec1-banner .row {
+    padding: 4rem 0;
+  }
   .None-icons {
     height: 326px;
   }
@@ -816,10 +895,113 @@ nav ul li a {
   .bottom-leftstars img {
     left: 0;
   }
+  .testi-content h4 {
+    font-size: 16px;
+  }
+  .testi-content small {
+    font-size: 14px;
+  }
+  .off{
+    display: none !important;
+  }
+  .logo img {
+    margin-left: 0px;
+  }
+  .nav-brand li a {
+    color: white;
+  }
+  .sun-stickers {
+    position: absolute;
+    top: 138px;
+    left: -2px;
+    width: 140px;
+    z-index: -1;
+  }
+  .testi-content p {
+    height: 310px;
+    font-size: 15px;
+  }
+  .testi-content img {
+    width: 50px;
+    object-fit: contain;
+  }
+  .testi-content {
+    height: 450px;
+  }
+  .quotes {
+    right: -9px;
+    bottom: -15px;
+  }
+  .girl-cover {
+    background-size: contain;
+    height: 34vh;
+    background-repeat: no-repeat;
+}
+.sec6-testi .half-line {
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+}
+.sec4-stop .man-bg {
+  width: 100%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+.man-bg img {
+  width: 50%;
+}
+
+.nav-brand {
+  gap: 30px;
+  background: #4ca647;
+  flex-direction: column;
+  padding: 2rem;
+  width: 260px;
+  position: absolute;
+  border-radius: 5px;
+}
+header .bi-list-nested {
+  font-size: 35px;
+  color: #000000;
+}
 }
 
 
 @media screen and (min-width:320px) and (max-width:767px) { 
+  
+  .sec1-banner .row {
+    padding: 3rem 0;
+  }
+  .banner-content h1 {
+    font-size: 35px;
+}
+  .banner-content h3 {
+    font-size: 25px;
+  }
+  .top-leftstars img {
+    left: 0px;
+    top: -26px;
+  }
+  .logo img {
+    margin-left: 0px;
+  }
+  .nav-brand {
+    gap: 30px;
+    background: #4ca647;
+    flex-direction: column;
+    padding: 2rem;
+    width: 260px;
+    position: absolute;
+    border-radius: 5px;
+  }
+  header .bi-list-nested {
+    font-size: 35px;
+    color: #000000;
+  }
+  .nav-brand li a {
+    color: white;
+  }
 
   .sec5-why-choose .card-round {
     margin: 15px 0;
@@ -831,7 +1013,127 @@ nav ul li a {
     justify-content: center;
     align-items: center;
   }
+  .off{
+    display: none !important;
+  }
   .sec2-banner img {
     width: 50%;
+  }
+  /* .nav-brand {
+    display: none;
+  } */
+  .sun-stickers {
+    position: absolute;
+    top: 135px;
+    left: 0px;
+    width: 25%;
+    z-index: -1;
+}
+.girl-cover {
+  background-size: contain;
+  height: 34vh;
+  background-repeat: no-repeat;
+}
+.sec4-stop .man-bg {
+  width: 100%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+.man-bg img {
+  width: 50%;
+}
+.stop-content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.sec4-stop .half-line img {
+  bottom: -320px;
+}
+.button-parent {
+  display: flex;
+  justify-content: center;
+}
+.sec6-testi .half-line {
+  bottom: 10px;
+  right: 0;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:476px) {  
+  .footer-logo img {
+    width: 50%;
+  }
+  .banner-content ul {
+    padding-left: 1rem;
+  }
+  .banner-content ul li {
+    list-style: disc;
+    padding-left: 0;
+  }
+  .stop-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .sec2-banner h2 {
+    font-size: 40px;
+  }
+  .sec5-why-choose .Banner-btn {
+    width: 85%;
+    font-size: 16px;
+  }
+  .bottom-rightstars img {
+    position: absolute;
+    bottom: -72px;
+    right: 12px;
+    width: 45px;
+  }
+  .bottom-leftstars img {
+    position: absolute;
+    bottom: 60px;
+    left: 5px;
+    width: 50px;
+  }
+  .sec6-testi h2 {
+    font-size: 35px;
+  }
+  .quotes {
+    right: 0;
+    bottom: -29px;
+  }
+  .testi-content h4 {
+    font-size: 15px;
+  }
+  .quotes img {
+      width: 45px;
+      height: 75%;
+  }
+  .top-rightstars img {
+    width: 50px;
+  }
+  .sec5-why-choose h2 {
+    font-size: 35px;
+  }
+  .top-leftstars img {
+    top: -132px;
+    width: 50px;
+  }
+  
+  .logo img {
+    width: 100px;
+  }
+  .top-nav > div p {
+    font-size: 16px;
+  }
+  .stop-content .Banner-btn {
+    font-size: 15px;
+    padding: 11px 12px;
+  }
+  .product-card {
+    height: auto;
+    margin: 1rem 0;
+  }
+  .None-icons {
+    height: auto;
   }
 }

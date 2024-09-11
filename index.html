@@ -40,15 +40,25 @@
       <div class="container">
         <nav class="d-flex align-items-center justify-content-between py-2">
           <div>
-            <ul class="nav-brand d-flex">
+            <div>
+              <a href="#" class="my-btn">
+                <i class="bi bi-list-nested d-xxl-none d-xl-none d-lg-none d-md-block"></i>
+                <!-- <i class="bi bi-x-lg close d-xxl-none d-xl-none d-lg-none" id="closePopup"></i> -->
+                </a>
+            </div>
+            <div class="mobile-block">
+            <ul class="nav-brand d-flex subforums off d-lg-flex d-xl-flex d-xxl-flex ">
               <li><a href="">Home</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Product</a></li>
               <li><a href="">Contact Us</a></li>
             </ul>
           </div>
+          </div>
           <div class="logo">
+            <a href="">
             <img src="./img/logo.webp" alt="" width="150px" />
+            </a>
           </div>
           <div class="nav-icons">
             <a href=""><i class="bi bi-person"></i></a>
@@ -345,7 +355,7 @@
                 Nutriscs to support your health journey and help you achieve
                 your goals with confidence.
               </p>
-              <div class="pt-4">
+              <div class="pt-4 button-parent">
                 <a href="" class="Banner-btn">SHOP YOUR SUPPLEMENT</a>
               </div>
               <div class="half-line">
@@ -355,7 +365,7 @@
           </div>
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
             <div class="man-bg">
-              <img src="/img/man-bg.png" alt="man-png" width="100%"/>
+              <img src="/img/man-bg.webp" alt="man-png" width="100%"/>
             </div>
           </div>
         </div>
@@ -390,7 +400,7 @@
         <div class="row">
           <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
             <div class="card-round">
-              <img src="/img/card-round1.png" alt="" />
+              <img src="/img/card-round1.webp" alt="" />
               <h3>
                 SWIFT SHIPPING <br />
                 GUARANTEED
@@ -400,7 +410,7 @@
           </div>
           <div class="col-xxl-3 col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
             <div class="card-round">
-              <img src="/img/card-round2.png" alt="" />
+              <img src="/img/card-round2.webp" alt="" />
               <h3>
                 100% VEGAN <br />
                 PROMISE
@@ -413,14 +423,14 @@
           </div>
           <div class="col-xxl-3 col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
             <div class="card-round">
-              <img src="/img/card-round3.png" alt="" />
+              <img src="/img/card-round3.webp" alt="" />
               <h3>EXCEPTIONAL CUSTOMER SUPPORT</h3>
               <p>Friendly team available to assist you with all your needs.</p>
             </div>
           </div>
           <div class="col-xxl-3 col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
             <div class="card-round">
-              <img src="/img/card-round4.png" alt="" />
+              <img src="/img/card-round4.webp" alt="" />
               <h3>TRANSPARENT INGREDIENT LABELS</h3>
               <p>
                 We clearly list all ingredients so you know exactly what you're
@@ -586,11 +596,11 @@
             <div>
               <ul>
                 <h3 class="py-4">Quick Links <span class="footer-B"></span></h3>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Our Products</a></li>
-                <li><a href="">Reviews</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="" class="footer-links">Home</a></li>
+                <li><a href="" class="footer-links">About</a></li>
+                <li><a href="" class="footer-links">Our Products</a></li>
+                <li><a href="" class="footer-links">Reviews</a></li>
+                <li><a href="" class="footer-links">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -598,11 +608,11 @@
             <div>
               <ul>
                 <h3 class="py-4">Other Links<span class="footer-B"></span></h3>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Our Products</a></li>
-                <li><a href="">Reviews</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="" class="footer-links">Home</a></li>
+                <li><a href="" class="footer-links">About</a></li>
+                <li><a href="" class="footer-links">Our Products</a></li>
+                <li><a href="" class="footer-links">Reviews</a></li>
+                <li><a href="" class="footer-links">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -664,17 +674,13 @@
     ></script>
 
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-          autoplay: {
-          delay: 2000,
-        },
-      });
+     
+ 
+     document.querySelector('.my-btn').addEventListener('click', myFunction);
+
+function myFunction() {
+  document.querySelector('.subforums').classList.toggle("off");
+}
       
     </script>
   </body>
